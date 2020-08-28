@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f70782-092f-49b7-81a6-32e201167a52" name="Default Changelist" comment="" />
+    <list default="true" id="68f70782-092f-49b7-81a6-32e201167a52" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/backgrounds/rendered.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/backgrounds/rendered.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/exlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pricing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/quote.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/quote.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +39,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1g9UYzp09EzLKFCWfJHGl03P0cw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,14 +84,32 @@
       <updated>1597526354368</updated>
       <workItem from="1597526355807" duration="12911000" />
       <workItem from="1597599592786" duration="4710000" />
-      <workItem from="1597691110147" duration="5628000" />
+      <workItem from="1597691110147" duration="11545000" />
+      <workItem from="1597790007968" duration="3949000" />
+      <workItem from="1597986912142" duration="495000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="-1102" y="1424" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597951806408">
+      <screen x="-1680" y="1198" width="1680" height="1027" />
+    </state>
+    <state x="-1102" y="1424" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.3200.1691/-1680.1198.1680.1027@-1680.1198.1680.1027" timestamp="1597951806407" />
     <state width="1659" height="346" key="GridCell.Tab.0.bottom" timestamp="1597599254883">
       <screen x="-1680" y="1198" width="1680" height="1027" />
     </state>
@@ -135,5 +182,9 @@
       <screen x="-1680" y="1198" width="1680" height="1027" />
     </state>
     <state x="-1138" y="1356" width="596" height="711" key="find.popup/0.23.3200.1691/-1680.1198.1680.1027@-1680.1198.1680.1027" timestamp="1597553948232" />
+    <state x="-1078" y="1594" width="571" height="256" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1597819952760">
+      <screen x="-1680" y="1198" width="1680" height="1027" />
+    </state>
+    <state x="-1078" y="1594" width="571" height="256" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.23.3200.1691/-1680.1198.1680.1027@-1680.1198.1680.1027" timestamp="1597819952760" />
   </component>
 </project>

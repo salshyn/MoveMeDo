@@ -32,30 +32,6 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-129313359-1');
-            console.log(localStorage);
-            var moveSize = localStorage.getItem('moveSize');
-            var numberOfHelpers;
-            var taskLength;
-            if (moveSize === "studio") {
-                numberOfHelpers = 2;
-                taskLength = 3;
-            } else if (moveSize === "1bd") {
-                numberOfHelpers = 2;
-                taskLength = 3;
-            } else if (moveSize === "2bd") {
-                numberOfHelpers = 2;
-                taskLength = 4;
-            } else if (moveSize === "3bd") {
-                numberOfHelpers = 2;
-                taskLength = 5;
-            }
-
-
-
-
-            var textToShow = "You indicated that you need a " + moveSize + " to be moved. This usually requires " +
-                numberOfHelpers + " people and takes around " + taskLength + " hours to complete the job.";
-
         </script>
     </head>
 
@@ -223,205 +199,208 @@
                 <div class="container">
                     <div class="row h-100vh align-items-center">
                         <div class="col">
-                            <h1 class="text-white text-uppercase fs-4 fs-lg-6">Pricing</h1>
-                            <p class="fs-0 fs-lg-1 text-white">Transparent, simple options</p>
+                            <h1 class="text-white text-uppercase fs-4 fs-lg-6">Estimate is on the way!</h1>
+                            <p id="estimateIntro" class="pt-5 fs-0 fs-lg-1 text-white"></p>
+                            <p id="estimateZip" class="fs-0 fs-lg-1 text-white"></p>
+                            <p id="estimateStairs" class="fs-0 fs-lg-1 text-white"></p>
+                            <p id="estimateText" class="fs-0 fs-lg-1 text-white">We have received your request. Please expect us to call you soon to confirm.</p>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- End of Section -->
 
-            <!-- Section -->
-            <section>
-                <div class="container">
-                    <div class="row justify-content-center text-center">
-                        <div class="col-xxl-10">
-                            <div class="row d-flex align-items-end">
-                                <div class="col-lg-4">
-                                    <div class="card mb-5 align-self-end">
-                                        <div class="card-body pt-5 pb-3">
-                                            <h4 class="card-title mb-2 text-uppercase fw-light">Spyre <span class="fw-medium">Basic</span></h4>
-                                            <p class="text-primary mb-4 fw-bold">FREE</p>
-                                            <ul class="list-unstyled mb-6">
-                                                <li>1 user</li>
-                                                <li>1 database</li>
-                                                <li>Free CMS access</li>
-                                                <li>CMS tools</li>
-                                                <li>Fix domain</li>
-                                                <li>Technical support</li>
-                                                <li>Local storage</li>
-                                                <li>Analytics</li>
-                                            </ul>
-                                            <a href="#" class="btn btn-primary px-5">Download Now</a>
-                                        </div>
-                                        <div class="card-footer bg-transparent border-0">
-                                            <small class="text-muted fs--2">By clicking you are accepting <a href="#" title="" class="text-muted">Terms of use</a></small>
-                                        </div>
-                                    </div>
-                                </div>
+<!--            &lt;!&ndash; Section &ndash;&gt;-->
+<!--            <section>-->
+<!--                <div class="container">-->
+<!--                    <div class="row justify-content-center text-center">-->
+<!--                        <div class="col-xxl-10">-->
+<!--                            <div class="row d-flex align-items-end">-->
+<!--                                <div class="col-lg-4">-->
+<!--                                    <div class="card mb-5 align-self-end">-->
+<!--                                        <div class="card-body pt-5 pb-3">-->
+<!--                                            <h4 class="card-title mb-2 text-uppercase fw-light">Spyre <span class="fw-medium">Basic</span></h4>-->
+<!--                                            <p class="text-primary mb-4 fw-bold">FREE</p>-->
+<!--                                            <ul class="list-unstyled mb-6">-->
+<!--                                                <li>1 user</li>-->
+<!--                                                <li>1 database</li>-->
+<!--                                                <li>Free CMS access</li>-->
+<!--                                                <li>CMS tools</li>-->
+<!--                                                <li>Fix domain</li>-->
+<!--                                                <li>Technical support</li>-->
+<!--                                                <li>Local storage</li>-->
+<!--                                                <li>Analytics</li>-->
+<!--                                            </ul>-->
+<!--                                            <a href="#" class="btn btn-primary px-5">Download Now</a>-->
+<!--                                        </div>-->
+<!--                                        <div class="card-footer bg-transparent border-0">-->
+<!--                                            <small class="text-muted fs&#45;&#45;2">By clicking you are accepting <a href="#" title="" class="text-muted">Terms of use</a></small>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
 
-                                <div class="col-lg-4">
-                                    <div class="card mb-5 align-self-end bg-secondary text-white border-0">
-                                        <span class="fs--1 mx-auto w-100 py-2 bg-white text-muted text-uppercase"><i class="zmdi zmdi-check-circle ml-2"></i> Most popular</span>
-                                        <div class="card-body pt-6 pb-3">
-                                            <h4 class="card-title mb-2 text-uppercase fw-light">Spyre <span class="fw-medium">Pro</span></h4>
-                                            <p class="text-primary mb-4 fw-bold">$39/m</p>
-                                            <ul class="list-unstyled mb-5">
-                                                <li>5 user</li>
-                                                <li>10 database</li>
-                                                <li>Custom add-ons</li>
-                                                <li>CMS tools</li>
-                                                <li>Custom domain</li>
-                                                <li>Technical support</li>
-                                                <li>Local storage</li>
-                                                <li>Analytics</li>
-                                                <li>API</li>
-                                            </ul>
-                                            <a href="#" class="btn btn-primary px-6">Buy Now</a>
-                                        </div>
-                                        <div class="card-footer bg-transparent border-0">
-                                            <small class="text-muted fs--2">By clicking you are accepting <a href="#" title="" class="text-muted">Terms of use</a></small>
-                                        </div>
-                                    </div>    
-                                </div>
+<!--                                <div class="col-lg-4">-->
+<!--                                    <div class="card mb-5 align-self-end bg-secondary text-white border-0">-->
+<!--                                        <span class="fs&#45;&#45;1 mx-auto w-100 py-2 bg-white text-muted text-uppercase"><i class="zmdi zmdi-check-circle ml-2"></i> Most popular</span>-->
+<!--                                        <div class="card-body pt-6 pb-3">-->
+<!--                                            <h4 class="card-title mb-2 text-uppercase fw-light">Spyre <span class="fw-medium">Pro</span></h4>-->
+<!--                                            <p class="text-primary mb-4 fw-bold">$39/m</p>-->
+<!--                                            <ul class="list-unstyled mb-5">-->
+<!--                                                <li>5 user</li>-->
+<!--                                                <li>10 database</li>-->
+<!--                                                <li>Custom add-ons</li>-->
+<!--                                                <li>CMS tools</li>-->
+<!--                                                <li>Custom domain</li>-->
+<!--                                                <li>Technical support</li>-->
+<!--                                                <li>Local storage</li>-->
+<!--                                                <li>Analytics</li>-->
+<!--                                                <li>API</li>-->
+<!--                                            </ul>-->
+<!--                                            <a href="#" class="btn btn-primary px-6">Buy Now</a>-->
+<!--                                        </div>-->
+<!--                                        <div class="card-footer bg-transparent border-0">-->
+<!--                                            <small class="text-muted fs&#45;&#45;2">By clicking you are accepting <a href="#" title="" class="text-muted">Terms of use</a></small>-->
+<!--                                        </div>-->
+<!--                                    </div>    -->
+<!--                                </div>-->
                                 
 
-                                <div class="col-lg-4">
-                                    <div class="card mb-5 align-self-end">
-                                        <div class="card-body pt-5 pb-3">
-                                            <h4 class="card-title mb-2 text-uppercase fw-light">Spyre <span class="fw-medium">Advanced</span></h4>
-                                            <p class="text-primary mb-4 fw-bold">$79/m</p>
-                                            <ul class="list-unstyled mb-5">
-                                                <li>Unlimited user</li>
-                                                <li>Unlimited database</li>
-                                                <li>Free CMS access</li>
-                                                <li>Custom add-ons</li>
-                                                <li>Custom domain/subdomain</li>
-                                                <li>Technical support</li>
-                                                <li>Cloud storage</li>
-                                                <li>Analytics</li>
-                                                <li>API</li>
-                                            </ul>
-                                            <a href="#" class="btn btn-primary px-6">Buy Now</a>
-                                        </div>
-                                        <div class="card-footer bg-transparent border-0">
-                                            <small class="text-muted fs--2">By clicking you are accepting <a href="#" title="" class="text-muted">Terms of use</a></small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End of Section -->
+<!--                                <div class="col-lg-4">-->
+<!--                                    <div class="card mb-5 align-self-end">-->
+<!--                                        <div class="card-body pt-5 pb-3">-->
+<!--                                            <h4 class="card-title mb-2 text-uppercase fw-light">Spyre <span class="fw-medium">Advanced</span></h4>-->
+<!--                                            <p class="text-primary mb-4 fw-bold">$79/m</p>-->
+<!--                                            <ul class="list-unstyled mb-5">-->
+<!--                                                <li>Unlimited user</li>-->
+<!--                                                <li>Unlimited database</li>-->
+<!--                                                <li>Free CMS access</li>-->
+<!--                                                <li>Custom add-ons</li>-->
+<!--                                                <li>Custom domain/subdomain</li>-->
+<!--                                                <li>Technical support</li>-->
+<!--                                                <li>Cloud storage</li>-->
+<!--                                                <li>Analytics</li>-->
+<!--                                                <li>API</li>-->
+<!--                                            </ul>-->
+<!--                                            <a href="#" class="btn btn-primary px-6">Buy Now</a>-->
+<!--                                        </div>-->
+<!--                                        <div class="card-footer bg-transparent border-0">-->
+<!--                                            <small class="text-muted fs&#45;&#45;2">By clicking you are accepting <a href="#" title="" class="text-muted">Terms of use</a></small>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+<!--            &lt;!&ndash; End of Section &ndash;&gt;-->
 
-            <!-- Section -->
-            <section class="pt-0">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h3 class="my-0 fs-1 fw-medium text-primary text-uppercase text-center">About</h3>
-                            <h2 class="mb-5 fw-medium text-secondary text-uppercase text-center">Our pricing</h2>
-                        </div>
-                    </div>
+<!--            &lt;!&ndash; Section &ndash;&gt;-->
+<!--            <section class="pt-0">-->
+<!--                <div class="container">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col">-->
+<!--                            <h3 class="my-0 fs-1 fw-medium text-primary text-uppercase text-center">About</h3>-->
+<!--                            <h2 class="mb-5 fw-medium text-secondary text-uppercase text-center">Our pricing</h2>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6 mb-5">
-                                    <div class="d-flex flex-row" data-aos="fade-right">
-                                        <div>
-                                            <i class="zmdi zmdi-money zmdi-hc-fw zmdi-hc-3x mr-1"></i>
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase">Affordable</h2>
-                                            <p class="fs--1">Suspendisse potenti. Maecenas consectetur enim ac turpis vehicula sagittis. Nulla finibus gravida sodales. Cras vel tristique neque, et rutrum mi.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-5">
-                                    <div class="d-flex flex-row" data-aos="fade-left">
-                                        <div>
-                                            <i class="zmdi zmdi-calendar-note zmdi-hc-fw zmdi-hc-3x mr-1"></i>
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase">Predictable</h2>
-                                            <p class="fs--1">Pellentesque ultrices ante id tristique porttitor. Nullam euismod nisl eget odio tincidunt, quis egestas sem eleifend. Phasellus faucibus sapien eu suscipit ultricies.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-5 mb-lg-0">
-                                    <div class="d-flex flex-row" data-aos="fade-right">
-                                        <div>
-                                            <i class="zmdi zmdi-chart-donut zmdi-hc-fw zmdi-hc-3x mr-1"></i>
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase">Monitorable</h2>
-                                            <p class="fs--1">Praesent venenatis mollis commodo. Aliquam odio nisl, faucibus sit amet sem dapibus, accumsan vehicula magna. Praesent faucibus eu lectus ultrices lacinia. Nulla eu lobortis ipsum.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex flex-row" data-aos="fade-left">
-                                        <div>
-                                            <i class="zmdi zmdi-traffic zmdi-hc-fw zmdi-hc-3x mr-1"></i>
-                                        </div>
-                                        <div class="flex-shrink-1">
-                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase">Full control</h2>
-                                            <p class="fs--1">Vestibulum ac est ac nibh auctor pellentesque. Phasellus pulvinar metus ut venenatis pharetra. Nulla a lectus a orci rutrum maximus at non ante. Interdum et malesuada fames.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-            <!-- End of Section -->
+<!--                    <div class="row justify-content-center">-->
+<!--                        <div class="col-lg-10">-->
+<!--                            <div class="row justify-content-center">-->
+<!--                                <div class="col-lg-6 mb-5">-->
+<!--                                    <div class="d-flex flex-row" data-aos="fade-right">-->
+<!--                                        <div>-->
+<!--                                            <i class="zmdi zmdi-money zmdi-hc-fw zmdi-hc-3x mr-1"></i>-->
+<!--                                        </div>-->
+<!--                                        <div class="flex-shrink-1">-->
+<!--                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase">Affordable</h2>-->
+<!--                                            <p class="fs&#45;&#45;1">Suspendisse potenti. Maecenas consectetur enim ac turpis vehicula sagittis. Nulla finibus gravida sodales. Cras vel tristique neque, et rutrum mi.</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6 mb-5">-->
+<!--                                    <div class="d-flex flex-row" data-aos="fade-left">-->
+<!--                                        <div>-->
+<!--                                            <i class="zmdi zmdi-calendar-note zmdi-hc-fw zmdi-hc-3x mr-1"></i>-->
+<!--                                        </div>-->
+<!--                                        <div class="flex-shrink-1">-->
+<!--                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase">Predictable</h2>-->
+<!--                                            <p class="fs&#45;&#45;1">Pellentesque ultrices ante id tristique porttitor. Nullam euismod nisl eget odio tincidunt, quis egestas sem eleifend. Phasellus faucibus sapien eu suscipit ultricies.</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6 mb-5 mb-lg-0">-->
+<!--                                    <div class="d-flex flex-row" data-aos="fade-right">-->
+<!--                                        <div>-->
+<!--                                            <i class="zmdi zmdi-chart-donut zmdi-hc-fw zmdi-hc-3x mr-1"></i>-->
+<!--                                        </div>-->
+<!--                                        <div class="flex-shrink-1">-->
+<!--                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase">Monitorable</h2>-->
+<!--                                            <p class="fs&#45;&#45;1">Praesent venenatis mollis commodo. Aliquam odio nisl, faucibus sit amet sem dapibus, accumsan vehicula magna. Praesent faucibus eu lectus ultrices lacinia. Nulla eu lobortis ipsum.</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="col-lg-6">-->
+<!--                                    <div class="d-flex flex-row" data-aos="fade-left">-->
+<!--                                        <div>-->
+<!--                                            <i class="zmdi zmdi-traffic zmdi-hc-fw zmdi-hc-3x mr-1"></i>-->
+<!--                                        </div>-->
+<!--                                        <div class="flex-shrink-1">-->
+<!--                                            <h2 class="mb-4 fs-1 fw-medium text-uppercase">Full control</h2>-->
+<!--                                            <p class="fs&#45;&#45;1">Vestibulum ac est ac nibh auctor pellentesque. Phasellus pulvinar metus ut venenatis pharetra. Nulla a lectus a orci rutrum maximus at non ante. Interdum et malesuada fames.</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        -->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+<!--            &lt;!&ndash; End of Section &ndash;&gt;-->
 
-            <!-- Section -->
-            <section class="py-6 bg-primary text-white">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 text-center">
-                            <a href="#" class="btn btn-outline-light btn-lg px-6 mb-5 mb-lg-0">Call Us<i class="zmdi zmdi-headset-mic zmdi-hc-lg ml-3"></i></a>
-                        </div>
-                        <div class="col-lg-8">
-                            <p class="mb-0">Still have a question? Consectetur adipiscing elit. Nullam vestibulum tellus ipsum, viverra urna blandit non. Interdum et malesuada fames ac ante ipsum primis.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End of Section -->
+<!--            &lt;!&ndash; Section &ndash;&gt;-->
+<!--            <section class="py-6 bg-primary text-white">-->
+<!--                <div class="container">-->
+<!--                    <div class="row align-items-center">-->
+<!--                        <div class="col-lg-4 text-center">-->
+<!--                            <a href="#" class="btn btn-outline-light btn-lg px-6 mb-5 mb-lg-0">Call Us<i class="zmdi zmdi-headset-mic zmdi-hc-lg ml-3"></i></a>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-8">-->
+<!--                            <p class="mb-0">Still have a question? Consectetur adipiscing elit. Nullam vestibulum tellus ipsum, viverra urna blandit non. Interdum et malesuada fames ac ante ipsum primis.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+<!--            &lt;!&ndash; End of Section &ndash;&gt;-->
 
-            <!-- Section -->
-            <section class="text-center">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-7">
-                            <h3 class="my-0 fs-1 fw-medium text-primary text-uppercase">Subscribe</h3>
-                            <h2 class="mb-5 fw-medium text-secondary text-uppercase">Newsletter</h2>
-                            <p class="mb-4">Cras dapibus erat ex, sed efficitur ligula interdum ut.</p>
-            
-                            <form class="form">
-                                <div class="form-group mb-1">
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-8">
-                                            <input type="text" class="form-control mb-3 mb-lg-2" placeholder="Email address">
-                                        </div>
-                                        <div class="col-8 col-lg-4">
-                                            <button type="button" class="btn btn-primary btn-block">Subscribe<i class="zmdi zmdi-mail-send ml-2"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End of Section -->
+<!--            &lt;!&ndash; Section &ndash;&gt;-->
+<!--            <section class="text-center">-->
+<!--                <div class="container">-->
+<!--                    <div class="row justify-content-center">-->
+<!--                        <div class="col-md-7">-->
+<!--                            <h3 class="my-0 fs-1 fw-medium text-primary text-uppercase">Subscribe</h3>-->
+<!--                            <h2 class="mb-5 fw-medium text-secondary text-uppercase">Newsletter</h2>-->
+<!--                            <p class="mb-4">Cras dapibus erat ex, sed efficitur ligula interdum ut.</p>-->
+<!--            -->
+<!--                            <form class="form">-->
+<!--                                <div class="form-group mb-1">-->
+<!--                                    <div class="row justify-content-center">-->
+<!--                                        <div class="col-lg-8">-->
+<!--                                            <input type="text" class="form-control mb-3 mb-lg-2" placeholder="Email address">-->
+<!--                                        </div>-->
+<!--                                        <div class="col-8 col-lg-4">-->
+<!--                                            <button type="button" class="btn btn-primary btn-block">Subscribe<i class="zmdi zmdi-mail-send ml-2"></i></button>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+<!--            &lt;!&ndash; End of Section &ndash;&gt;-->
         </main>
         <!-- End of Main Content -->
 
@@ -531,5 +510,69 @@
 
         <!-- Theme Javascripts -->
         <script src="../assets/js/theme.js"></script>
+        <script>
+            console.log(localStorage);
+
+            // -------------INTRO-------------------------------------------------------------
+
+            var getMoveSize = localStorage.getItem('moveSize');
+            var numberOfHelpers;
+            var moveSize;
+            var taskLength;
+            if (getMoveSize === "studio") {
+                moveSize = "a studio/room";
+                numberOfHelpers = 2;
+                taskLength = "2 to 3 hours";
+            } else if (getMoveSize === "1bd") {
+                moveSize = "1 bedroom";
+                numberOfHelpers = 2;
+                taskLength = "3 to 4";
+            } else if (getMoveSize === "2bd") {
+                moveSize = "2 bedrooms";
+                numberOfHelpers = 3;
+                taskLength = "5 to 6 hours";
+            } else if (getMoveSize === "3bd") {
+                moveSize = "3 bedrooms";
+                numberOfHelpers = 4;
+                taskLength = "6+ hours";
+            }
+            // Estimate is on the way.
+            var estimateIntro = "You have indicated that you need to move " + moveSize + ". This usually requires " +
+                numberOfHelpers + " people and takes around " + taskLength + " to complete the job.";
+            document.getElementById("estimateIntro").append(estimateIntro);
+
+            // ----------------ZIP-------------------------------------------------------------
+
+            var zipFrom = localStorage.getItem('zipFrom');
+            var zipTo = localStorage.getItem('zipTo');
+            var clientKey = "js-u9cNDT7xGBkenvbRTRttjWrSYhD9LxXYJKn1jZqPQj4lLgZrWzjpynJroYWz4u97";
+            // Build url
+            var url = "https://api.zip-codes.com/ZipCodesAPI.svc/1.0/CalculateDistance/ByZip?fromzipcode=" + zipFrom + "&tozipcode=" + zipTo + "&key=6VG0638P7QBEEMIKR2T1";
+            var estimateZip = "";
+
+            // // Make AJAX request
+            // $.ajax({
+            //     "url": url,
+            //     type: "GET",
+            //     "dataType": "json"
+            // }).done(function(data) {
+            //     console.log(data);
+            //     estimateZip = "You are moving from " + data.FromPointDetails.FromCity + ", " + data.FromPointDetails.FromState + " to " + data.ToPointDetails.ToCity + ", " + data.ToPointDetails.ToState + ". This is about " + Math.floor(data.DistanceInMiles) + " miles.";
+            //
+            //     document.getElementById("estimateZip").append(estimateZip);
+            // }).fail(function(data) {
+            //     console.log(data);
+            // });
+
+
+            // ----------------Stairs-------------------------------------------------------------
+
+            var stairsOrigin = localStorage.getItem('floorFrom');
+            var stairsDestination = localStorage.getItem('floorTo');
+
+            // document.getElementById("estimateStairs").append("Each floor will add another 10-15% of length of work.");
+            // localStorage.clear();
+
+        </script>
     </body>
 </html>
